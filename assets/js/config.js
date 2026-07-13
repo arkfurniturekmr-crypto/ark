@@ -21,8 +21,8 @@ const ARK_CONFIG = {
 
   // Replace this with your own Google Maps embed link any time.
   // Google Maps > Share > Embed a map > copy the "src" URL from the iframe code.
-  googleMapsEmbedUrl: "https://www.google.com/maps?q=Industrial+Area,+Old+Collector+Office,+Kamareddy&output=embed",
-  googleMapsLinkUrl: "https://www.google.com/maps/search/?api=1&query=Industrial+Area+Old+Collector+Office+Kamareddy",
+  googleMapsEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3787.1724988291444!2d78.31618817464806!3d18.33941317468387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc4964cd219e3f%3A0x7388df8a324466c!2sARK%20FURNITURE!5e0!3m2!1sen!2sin!4v1783931758964!5m2!1sen!2sin",
+  googleMapsLinkUrl: "https://www.google.com/maps/search/?api=1&query=18.33941317468387,78.31618817464806",
 };
 
 // Builds a wa.me link with the configured number + prefilled message.
