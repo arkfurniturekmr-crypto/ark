@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Jhula | ARK Furniture</title>
-<meta name="description" content="Jhula — Traditional handcrafted jhulas that bring warmth and charm to any home." />
+<meta name="description" content="Jhula — Traditional handcrafted jhulas that bring warmth and charm to any home. ARK Furniture, Kamareddy." />
 <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml" />
 <!-- Google Fonts: Playfair Display (headings) + Poppins (body/buttons) -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
-<body>
+<body data-root="../" data-collection="jhula">
 <header class="site-header">
   <div class="header-top">
     <div class="container">
@@ -63,134 +63,13 @@
   <section class="section">
     <div class="container">
       <!--
-        TO ADD OR EDIT A PRODUCT: copy one ".product-card" block below
-        (including its four images) and edit the title, description, and
-        the four image file paths. Product images live in:
-        assets/images/products/jhula/
+        PHOTOS: put them in  assets/images/products/jhula/
+        and name them  "jhula 1", "jhula 2" ...  (any format: jpg, png, webp, ...).
+        How many are shown is set in assets/js/collections.js
       -->
-      <div class="product-grid">
-      <div class="product-card reveal">
-        <div class="product-thumbs">
-          <a href="#" data-gallery="jhula-p01" data-full="../assets/images/products/jhula/product-01-img-1.jpg"><img src="../assets/images/products/jhula/product-01-img-1.jpg" alt="Jhula product 01 image 1" loading="lazy" /></a><a href="#" data-gallery="jhula-p01" data-full="../assets/images/products/jhula/product-01-img-2.jpg"><img src="../assets/images/products/jhula/product-01-img-2.jpg" alt="Jhula product 01 image 2" loading="lazy" /></a><a href="#" data-gallery="jhula-p01" data-full="../assets/images/products/jhula/product-01-img-3.jpg"><img src="../assets/images/products/jhula/product-01-img-3.jpg" alt="Jhula product 01 image 3" loading="lazy" /></a><a href="#" data-gallery="jhula-p01" data-full="../assets/images/products/jhula/product-01-img-4.jpg"><img src="../assets/images/products/jhula/product-01-img-4.jpg" alt="Jhula product 01 image 4" loading="lazy" /></a>
-        </div>
-        <div class="product-info">
-          <h3>Jhula — Design 01</h3>
-          <p>Handcrafted in premium teak wood. Custom sizes and finishes available on request.</p>
-          <a href="#" data-whatsapp-link target="_blank" rel="noopener" class="btn"><i class="fa-brands fa-whatsapp"></i> Enquire Now</a>
-        </div>
-      </div>
-      <div class="product-card reveal">
-        <div class="product-thumbs">
-          <a href="#" data-gallery="jhula-p02" data-full="../assets/images/products/jhula/product-02-img-1.jpg"><img src="../assets/images/products/jhula/product-02-img-1.jpg" alt="Jhula product 02 image 1" loading="lazy" /></a><a href="#" data-gallery="jhula-p02" data-full="../assets/images/products/jhula/product-02-img-2.jpg"><img src="../assets/images/products/jhula/product-02-img-2.jpg" alt="Jhula product 02 image 2" loading="lazy" /></a><a href="#" data-gallery="jhula-p02" data-full="../assets/images/products/jhula/product-02-img-3.jpg"><img src="../assets/images/products/jhula/product-02-img-3.jpg" alt="Jhula product 02 image 3" loading="lazy" /></a><a href="#" data-gallery="jhula-p02" data-full="../assets/images/products/jhula/product-02-img-4.jpg"><img src="../assets/images/products/jhula/product-02-img-4.jpg" alt="Jhula product 02 image 4" loading="lazy" /></a>
-        </div>
-        <div class="product-info">
-          <h3>Jhula — Design 02</h3>
-          <p>Handcrafted in premium teak wood. Custom sizes and finishes available on request.</p>
-          <a href="#" data-whatsapp-link target="_blank" rel="noopener" class="btn"><i class="fa-brands fa-whatsapp"></i> Enquire Now</a>
-        </div>
-      </div>
-      <div class="product-card reveal">
-        <div class="product-thumbs">
-          <a href="#" data-gallery="jhula-p03" data-full="../assets/images/products/jhula/product-03-img-1.jpg"><img src="../assets/images/products/jhula/product-03-img-1.jpg" alt="Jhula product 03 image 1" loading="lazy" /></a><a href="#" data-gallery="jhula-p03" data-full="../assets/images/products/jhula/product-03-img-2.jpg"><img src="../assets/images/products/jhula/product-03-img-2.jpg" alt="Jhula product 03 image 2" loading="lazy" /></a><a href="#" data-gallery="jhula-p03" data-full="../assets/images/products/jhula/product-03-img-3.jpg"><img src="../assets/images/products/jhula/product-03-img-3.jpg" alt="Jhula product 03 image 3" loading="lazy" /></a><a href="#" data-gallery="jhula-p03" data-full="../assets/images/products/jhula/product-03-img-4.jpg"><img src="../assets/images/products/jhula/product-03-img-4.jpg" alt="Jhula product 03 image 4" loading="lazy" /></a>
-        </div>
-        <div class="product-info">
-          <h3>Jhula — Design 03</h3>
-          <p>Handcrafted in premium teak wood. Custom sizes and finishes available on request.</p>
-          <a href="#" data-whatsapp-link target="_blank" rel="noopener" class="btn"><i class="fa-brands fa-whatsapp"></i> Enquire Now</a>
-        </div>
-      </div>
-      <div class="product-card reveal">
-        <div class="product-thumbs">
-          <a href="#" data-gallery="jhula-p04" data-full="../assets/images/products/jhula/product-04-img-1.jpg"><img src="../assets/images/products/jhula/product-04-img-1.jpg" alt="Jhula product 04 image 1" loading="lazy" /></a><a href="#" data-gallery="jhula-p04" data-full="../assets/images/products/jhula/product-04-img-2.jpg"><img src="../assets/images/products/jhula/product-04-img-2.jpg" alt="Jhula product 04 image 2" loading="lazy" /></a><a href="#" data-gallery="jhula-p04" data-full="../assets/images/products/jhula/product-04-img-3.jpg"><img src="../assets/images/products/jhula/product-04-img-3.jpg" alt="Jhula product 04 image 3" loading="lazy" /></a><a href="#" data-gallery="jhula-p04" data-full="../assets/images/products/jhula/product-04-img-4.jpg"><img src="../assets/images/products/jhula/product-04-img-4.jpg" alt="Jhula product 04 image 4" loading="lazy" /></a>
-        </div>
-        <div class="product-info">
-          <h3>Jhula — Design 04</h3>
-          <p>Handcrafted in premium teak wood. Custom sizes and finishes available on request.</p>
-          <a href="#" data-whatsapp-link target="_blank" rel="noopener" class="btn"><i class="fa-brands fa-whatsapp"></i> Enquire Now</a>
-        </div>
-      </div>
-      <div class="product-card reveal">
-        <div class="product-thumbs">
-          <a href="#" data-gallery="jhula-p05" data-full="../assets/images/products/jhula/product-05-img-1.jpg"><img src="../assets/images/products/jhula/product-05-img-1.jpg" alt="Jhula product 05 image 1" loading="lazy" /></a><a href="#" data-gallery="jhula-p05" data-full="../assets/images/products/jhula/product-05-img-2.jpg"><img src="../assets/images/products/jhula/product-05-img-2.jpg" alt="Jhula product 05 image 2" loading="lazy" /></a><a href="#" data-gallery="jhula-p05" data-full="../assets/images/products/jhula/product-05-img-3.jpg"><img src="../assets/images/products/jhula/product-05-img-3.jpg" alt="Jhula product 05 image 3" loading="lazy" /></a><a href="#" data-gallery="jhula-p05" data-full="../assets/images/products/jhula/product-05-img-4.jpg"><img src="../assets/images/products/jhula/product-05-img-4.jpg" alt="Jhula product 05 image 4" loading="lazy" /></a>
-        </div>
-        <div class="product-info">
-          <h3>Jhula — Design 05</h3>
-          <p>Handcrafted in premium teak wood. Custom sizes and finishes available on request.</p>
-          <a href="#" data-whatsapp-link target="_blank" rel="noopener" class="btn"><i class="fa-brands fa-whatsapp"></i> Enquire Now</a>
-        </div>
-      </div>
-      <div class="product-card reveal">
-        <div class="product-thumbs">
-          <a href="#" data-gallery="jhula-p06" data-full="../assets/images/products/jhula/product-06-img-1.jpg"><img src="../assets/images/products/jhula/product-06-img-1.jpg" alt="Jhula product 06 image 1" loading="lazy" /></a><a href="#" data-gallery="jhula-p06" data-full="../assets/images/products/jhula/product-06-img-2.jpg"><img src="../assets/images/products/jhula/product-06-img-2.jpg" alt="Jhula product 06 image 2" loading="lazy" /></a><a href="#" data-gallery="jhula-p06" data-full="../assets/images/products/jhula/product-06-img-3.jpg"><img src="../assets/images/products/jhula/product-06-img-3.jpg" alt="Jhula product 06 image 3" loading="lazy" /></a><a href="#" data-gallery="jhula-p06" data-full="../assets/images/products/jhula/product-06-img-4.jpg"><img src="../assets/images/products/jhula/product-06-img-4.jpg" alt="Jhula product 06 image 4" loading="lazy" /></a>
-        </div>
-        <div class="product-info">
-          <h3>Jhula — Design 06</h3>
-          <p>Handcrafted in premium teak wood. Custom sizes and finishes available on request.</p>
-          <a href="#" data-whatsapp-link target="_blank" rel="noopener" class="btn"><i class="fa-brands fa-whatsapp"></i> Enquire Now</a>
-        </div>
-      </div>
-      <div class="product-card reveal">
-        <div class="product-thumbs">
-          <a href="#" data-gallery="jhula-p07" data-full="../assets/images/products/jhula/product-07-img-1.jpg"><img src="../assets/images/products/jhula/product-07-img-1.jpg" alt="Jhula product 07 image 1" loading="lazy" /></a><a href="#" data-gallery="jhula-p07" data-full="../assets/images/products/jhula/product-07-img-2.jpg"><img src="../assets/images/products/jhula/product-07-img-2.jpg" alt="Jhula product 07 image 2" loading="lazy" /></a><a href="#" data-gallery="jhula-p07" data-full="../assets/images/products/jhula/product-07-img-3.jpg"><img src="../assets/images/products/jhula/product-07-img-3.jpg" alt="Jhula product 07 image 3" loading="lazy" /></a><a href="#" data-gallery="jhula-p07" data-full="../assets/images/products/jhula/product-07-img-4.jpg"><img src="../assets/images/products/jhula/product-07-img-4.jpg" alt="Jhula product 07 image 4" loading="lazy" /></a>
-        </div>
-        <div class="product-info">
-          <h3>Jhula — Design 07</h3>
-          <p>Handcrafted in premium teak wood. Custom sizes and finishes available on request.</p>
-          <a href="#" data-whatsapp-link target="_blank" rel="noopener" class="btn"><i class="fa-brands fa-whatsapp"></i> Enquire Now</a>
-        </div>
-      </div>
-      <div class="product-card reveal">
-        <div class="product-thumbs">
-          <a href="#" data-gallery="jhula-p08" data-full="../assets/images/products/jhula/product-08-img-1.jpg"><img src="../assets/images/products/jhula/product-08-img-1.jpg" alt="Jhula product 08 image 1" loading="lazy" /></a><a href="#" data-gallery="jhula-p08" data-full="../assets/images/products/jhula/product-08-img-2.jpg"><img src="../assets/images/products/jhula/product-08-img-2.jpg" alt="Jhula product 08 image 2" loading="lazy" /></a><a href="#" data-gallery="jhula-p08" data-full="../assets/images/products/jhula/product-08-img-3.jpg"><img src="../assets/images/products/jhula/product-08-img-3.jpg" alt="Jhula product 08 image 3" loading="lazy" /></a><a href="#" data-gallery="jhula-p08" data-full="../assets/images/products/jhula/product-08-img-4.jpg"><img src="../assets/images/products/jhula/product-08-img-4.jpg" alt="Jhula product 08 image 4" loading="lazy" /></a>
-        </div>
-        <div class="product-info">
-          <h3>Jhula — Design 08</h3>
-          <p>Handcrafted in premium teak wood. Custom sizes and finishes available on request.</p>
-          <a href="#" data-whatsapp-link target="_blank" rel="noopener" class="btn"><i class="fa-brands fa-whatsapp"></i> Enquire Now</a>
-        </div>
-      </div>
-      <div class="product-card reveal">
-        <div class="product-thumbs">
-          <a href="#" data-gallery="jhula-p09" data-full="../assets/images/products/jhula/product-09-img-1.jpg"><img src="../assets/images/products/jhula/product-09-img-1.jpg" alt="Jhula product 09 image 1" loading="lazy" /></a><a href="#" data-gallery="jhula-p09" data-full="../assets/images/products/jhula/product-09-img-2.jpg"><img src="../assets/images/products/jhula/product-09-img-2.jpg" alt="Jhula product 09 image 2" loading="lazy" /></a><a href="#" data-gallery="jhula-p09" data-full="../assets/images/products/jhula/product-09-img-3.jpg"><img src="../assets/images/products/jhula/product-09-img-3.jpg" alt="Jhula product 09 image 3" loading="lazy" /></a><a href="#" data-gallery="jhula-p09" data-full="../assets/images/products/jhula/product-09-img-4.jpg"><img src="../assets/images/products/jhula/product-09-img-4.jpg" alt="Jhula product 09 image 4" loading="lazy" /></a>
-        </div>
-        <div class="product-info">
-          <h3>Jhula — Design 09</h3>
-          <p>Handcrafted in premium teak wood. Custom sizes and finishes available on request.</p>
-          <a href="#" data-whatsapp-link target="_blank" rel="noopener" class="btn"><i class="fa-brands fa-whatsapp"></i> Enquire Now</a>
-        </div>
-      </div>
-      <div class="product-card reveal">
-        <div class="product-thumbs">
-          <a href="#" data-gallery="jhula-p10" data-full="../assets/images/products/jhula/product-10-img-1.jpg"><img src="../assets/images/products/jhula/product-10-img-1.jpg" alt="Jhula product 10 image 1" loading="lazy" /></a><a href="#" data-gallery="jhula-p10" data-full="../assets/images/products/jhula/product-10-img-2.jpg"><img src="../assets/images/products/jhula/product-10-img-2.jpg" alt="Jhula product 10 image 2" loading="lazy" /></a><a href="#" data-gallery="jhula-p10" data-full="../assets/images/products/jhula/product-10-img-3.jpg"><img src="../assets/images/products/jhula/product-10-img-3.jpg" alt="Jhula product 10 image 3" loading="lazy" /></a><a href="#" data-gallery="jhula-p10" data-full="../assets/images/products/jhula/product-10-img-4.jpg"><img src="../assets/images/products/jhula/product-10-img-4.jpg" alt="Jhula product 10 image 4" loading="lazy" /></a>
-        </div>
-        <div class="product-info">
-          <h3>Jhula — Design 10</h3>
-          <p>Handcrafted in premium teak wood. Custom sizes and finishes available on request.</p>
-          <a href="#" data-whatsapp-link target="_blank" rel="noopener" class="btn"><i class="fa-brands fa-whatsapp"></i> Enquire Now</a>
-        </div>
-      </div>
-      <div class="product-card reveal">
-        <div class="product-thumbs">
-          <a href="#" data-gallery="jhula-p11" data-full="../assets/images/products/jhula/product-11-img-1.jpg"><img src="../assets/images/products/jhula/product-11-img-1.jpg" alt="Jhula product 11 image 1" loading="lazy" /></a><a href="#" data-gallery="jhula-p11" data-full="../assets/images/products/jhula/product-11-img-2.jpg"><img src="../assets/images/products/jhula/product-11-img-2.jpg" alt="Jhula product 11 image 2" loading="lazy" /></a><a href="#" data-gallery="jhula-p11" data-full="../assets/images/products/jhula/product-11-img-3.jpg"><img src="../assets/images/products/jhula/product-11-img-3.jpg" alt="Jhula product 11 image 3" loading="lazy" /></a><a href="#" data-gallery="jhula-p11" data-full="../assets/images/products/jhula/product-11-img-4.jpg"><img src="../assets/images/products/jhula/product-11-img-4.jpg" alt="Jhula product 11 image 4" loading="lazy" /></a>
-        </div>
-        <div class="product-info">
-          <h3>Jhula — Design 11</h3>
-          <p>Handcrafted in premium teak wood. Custom sizes and finishes available on request.</p>
-          <a href="#" data-whatsapp-link target="_blank" rel="noopener" class="btn"><i class="fa-brands fa-whatsapp"></i> Enquire Now</a>
-        </div>
-      </div>
-      <div class="product-card reveal">
-        <div class="product-thumbs">
-          <a href="#" data-gallery="jhula-p12" data-full="../assets/images/products/jhula/product-12-img-1.jpg"><img src="../assets/images/products/jhula/product-12-img-1.jpg" alt="Jhula product 12 image 1" loading="lazy" /></a><a href="#" data-gallery="jhula-p12" data-full="../assets/images/products/jhula/product-12-img-2.jpg"><img src="../assets/images/products/jhula/product-12-img-2.jpg" alt="Jhula product 12 image 2" loading="lazy" /></a><a href="#" data-gallery="jhula-p12" data-full="../assets/images/products/jhula/product-12-img-3.jpg"><img src="../assets/images/products/jhula/product-12-img-3.jpg" alt="Jhula product 12 image 3" loading="lazy" /></a><a href="#" data-gallery="jhula-p12" data-full="../assets/images/products/jhula/product-12-img-4.jpg"><img src="../assets/images/products/jhula/product-12-img-4.jpg" alt="Jhula product 12 image 4" loading="lazy" /></a>
-        </div>
-        <div class="product-info">
-          <h3>Jhula — Design 12</h3>
-          <p>Handcrafted in premium teak wood. Custom sizes and finishes available on request.</p>
-          <a href="#" data-whatsapp-link target="_blank" rel="noopener" class="btn"><i class="fa-brands fa-whatsapp"></i> Enquire Now</a>
-        </div>
-      </div>
-      </div>
-      <div class="pagination" aria-label="Product page navigation"></div>
+      <div class="gallery" data-gallery-page aria-live="polite"></div>
+      <div class="gallery-status"></div>
+      <div class="gallery-sentinel"></div>
     </div>
   </section>
 </main>
@@ -206,16 +85,16 @@
       <div class="reveal">
         <h4>Our Collections</h4>
         <ul class="footer-links">
-          <li><a href="../categories/teak-bed.html">Teak Bed / Palang</a></li>
-<li><a href="../categories/teak-showcase.html">Teak Showcase</a></li>
-<li><a href="../categories/teak-dressings.html">Teak Dressings</a></li>
-<li><a href="../categories/teak-sofa.html">Teak Sofa</a></li>
-<li><a href="../categories/cushion-sofa.html">Cushion Sofa</a></li>
-<li><a href="../categories/luxury-sofa.html">Luxury Sofa</a></li>
-<li><a href="../categories/luxury-beds.html">Luxury Beds</a></li>
-<li><a href="../categories/complete-furniture-set.html">Complete Furniture Set</a></li>
+          <li><a href="../categories/antique.html">Antique</a></li>
+<li><a href="../categories/bed.html">Bed</a></li>
+<li><a href="../categories/chairs.html">Chairs</a></li>
+<li><a href="../categories/dining.html">Dining</a></li>
+<li><a href="../categories/door.html">Door</a></li>
+<li><a href="../categories/dressing.html">Dressing</a></li>
 <li><a href="../categories/jhula.html">Jhula</a></li>
-<li><a href="../categories/antique-items.html">Antique Items</a></li>
+<li><a href="../categories/marriage-set.html">Marriage Set</a></li>
+<li><a href="../categories/showcase.html">Showcase</a></li>
+<li><a href="../categories/sofa.html">Sofa</a></li>
         </ul>
       </div>
       <div class="reveal">
@@ -247,8 +126,11 @@
 <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 
 <script src="../assets/js/config.js"></script>
+<script src="../assets/js/collections.js"></script>
+<script src="../assets/js/image-loader.js"></script>
 <script src="../assets/js/main.js"></script>
+<script src="../assets/js/gallery.js"></script>
 <script src="../assets/js/lightbox.js"></script>
-<script src="../assets/js/pagination.js"></script>
+
 </body>
 </html>

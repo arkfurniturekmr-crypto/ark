@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body>
+<body data-root="">
 <header class="site-header">
   <div class="header-top">
     <div class="container">
@@ -51,21 +51,7 @@
 <main>
   <!-- ================= HERO SLIDER ================= -->
   <section class="hero-slider" aria-label="Hero Slider">
-    <div class="hero-slide is-active">
-      <img src="assets/images/hero-slider/hero-1.jpg" alt="ARK Furniture showroom slide 1" />
-    </div>
-    <div class="hero-slide">
-      <img src="assets/images/hero-slider/hero-2.jpg" alt="ARK Furniture showroom slide 2" />
-    </div>
-    <div class="hero-slide">
-      <img src="assets/images/hero-slider/hero-3.jpg" alt="ARK Furniture showroom slide 3" />
-    </div>
-    <div class="hero-slide">
-      <img src="assets/images/hero-slider/hero-4.jpg" alt="ARK Furniture showroom slide 4" />
-    </div>
-    <div class="hero-slide">
-      <img src="assets/images/hero-slider/hero-5.jpg" alt="ARK Furniture showroom slide 5" />
-    </div>
+    <!-- Slides are added automatically from assets/images/hero-slider/hero-1, hero-2 ... (any image format) -->
 
     <div class="hero-caption">
       <div class="hero-eyebrow">Handcrafted With Care</div>
@@ -86,73 +72,73 @@
         <div class="divider"></div>
       </div>
       <div class="collection-grid">
-      <a href="categories/teak-bed.html" class="collection-card reveal">
-        <img src="assets/images/collections/teak-bed/cover.jpg" alt="Teak Bed / Palang" loading="lazy" />
+      <a href="categories/antique.html" class="collection-card reveal" data-cover="antique" aria-label="Antique collection">
+        <div class="cover-empty"><i class="fa-regular fa-image"></i><span>Photos coming soon</span></div>
         <div class="collection-card-label">
-          <h3>Teak Bed / Palang</h3>
+          <h3>Antique</h3>
           <span class="arrow-icon"><i class="fa-solid fa-arrow-right"></i></span>
         </div>
       </a>
-      <a href="categories/teak-showcase.html" class="collection-card reveal">
-        <img src="assets/images/collections/teak-showcase/cover.jpg" alt="Teak Showcase" loading="lazy" />
+      <a href="categories/bed.html" class="collection-card reveal" data-cover="bed" aria-label="Bed collection">
+        <div class="cover-empty"><i class="fa-regular fa-image"></i><span>Photos coming soon</span></div>
         <div class="collection-card-label">
-          <h3>Teak Showcase</h3>
+          <h3>Bed</h3>
           <span class="arrow-icon"><i class="fa-solid fa-arrow-right"></i></span>
         </div>
       </a>
-      <a href="categories/teak-dressings.html" class="collection-card reveal">
-        <img src="assets/images/collections/teak-dressings/cover.jpg" alt="Teak Dressings" loading="lazy" />
+      <a href="categories/chairs.html" class="collection-card reveal" data-cover="chairs" aria-label="Chairs collection">
+        <div class="cover-empty"><i class="fa-regular fa-image"></i><span>Photos coming soon</span></div>
         <div class="collection-card-label">
-          <h3>Teak Dressings</h3>
+          <h3>Chairs</h3>
           <span class="arrow-icon"><i class="fa-solid fa-arrow-right"></i></span>
         </div>
       </a>
-      <a href="categories/teak-sofa.html" class="collection-card reveal">
-        <img src="assets/images/collections/teak-sofa/cover.jpg" alt="Teak Sofa" loading="lazy" />
+      <a href="categories/dining.html" class="collection-card reveal" data-cover="dining" aria-label="Dining collection">
+        <div class="cover-empty"><i class="fa-regular fa-image"></i><span>Photos coming soon</span></div>
         <div class="collection-card-label">
-          <h3>Teak Sofa</h3>
+          <h3>Dining</h3>
           <span class="arrow-icon"><i class="fa-solid fa-arrow-right"></i></span>
         </div>
       </a>
-      <a href="categories/cushion-sofa.html" class="collection-card reveal">
-        <img src="assets/images/collections/cushion-sofa/cover.jpg" alt="Cushion Sofa" loading="lazy" />
+      <a href="categories/door.html" class="collection-card reveal" data-cover="door" aria-label="Door collection">
+        <div class="cover-empty"><i class="fa-regular fa-image"></i><span>Photos coming soon</span></div>
         <div class="collection-card-label">
-          <h3>Cushion Sofa</h3>
+          <h3>Door</h3>
           <span class="arrow-icon"><i class="fa-solid fa-arrow-right"></i></span>
         </div>
       </a>
-      <a href="categories/luxury-sofa.html" class="collection-card reveal">
-        <img src="assets/images/collections/luxury-sofa/cover.jpg" alt="Luxury Sofa" loading="lazy" />
+      <a href="categories/dressing.html" class="collection-card reveal" data-cover="dressing" aria-label="Dressing collection">
+        <div class="cover-empty"><i class="fa-regular fa-image"></i><span>Photos coming soon</span></div>
         <div class="collection-card-label">
-          <h3>Luxury Sofa</h3>
+          <h3>Dressing</h3>
           <span class="arrow-icon"><i class="fa-solid fa-arrow-right"></i></span>
         </div>
       </a>
-      <a href="categories/luxury-beds.html" class="collection-card reveal">
-        <img src="assets/images/collections/luxury-beds/cover.jpg" alt="Luxury Beds" loading="lazy" />
-        <div class="collection-card-label">
-          <h3>Luxury Beds</h3>
-          <span class="arrow-icon"><i class="fa-solid fa-arrow-right"></i></span>
-        </div>
-      </a>
-      <a href="categories/complete-furniture-set.html" class="collection-card reveal">
-        <img src="assets/images/collections/complete-furniture-set/cover.jpg" alt="Complete Furniture Set" loading="lazy" />
-        <div class="collection-card-label">
-          <h3>Complete Furniture Set</h3>
-          <span class="arrow-icon"><i class="fa-solid fa-arrow-right"></i></span>
-        </div>
-      </a>
-      <a href="categories/jhula.html" class="collection-card reveal">
-        <img src="assets/images/collections/jhula/cover.jpg" alt="Jhula" loading="lazy" />
+      <a href="categories/jhula.html" class="collection-card reveal" data-cover="jhula" aria-label="Jhula collection">
+        <div class="cover-empty"><i class="fa-regular fa-image"></i><span>Photos coming soon</span></div>
         <div class="collection-card-label">
           <h3>Jhula</h3>
           <span class="arrow-icon"><i class="fa-solid fa-arrow-right"></i></span>
         </div>
       </a>
-      <a href="categories/antique-items.html" class="collection-card reveal">
-        <img src="assets/images/collections/antique-items/cover.jpg" alt="Antique Items" loading="lazy" />
+      <a href="categories/marriage-set.html" class="collection-card reveal" data-cover="marriage-set" aria-label="Marriage Set collection">
+        <div class="cover-empty"><i class="fa-regular fa-image"></i><span>Photos coming soon</span></div>
         <div class="collection-card-label">
-          <h3>Antique Items</h3>
+          <h3>Marriage Set</h3>
+          <span class="arrow-icon"><i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+      </a>
+      <a href="categories/showcase.html" class="collection-card reveal" data-cover="showcase" aria-label="Showcase collection">
+        <div class="cover-empty"><i class="fa-regular fa-image"></i><span>Photos coming soon</span></div>
+        <div class="collection-card-label">
+          <h3>Showcase</h3>
+          <span class="arrow-icon"><i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+      </a>
+      <a href="categories/sofa.html" class="collection-card reveal" data-cover="sofa" aria-label="Sofa collection">
+        <div class="cover-empty"><i class="fa-regular fa-image"></i><span>Photos coming soon</span></div>
+        <div class="collection-card-label">
+          <h3>Sofa</h3>
           <span class="arrow-icon"><i class="fa-solid fa-arrow-right"></i></span>
         </div>
       </a>
@@ -197,16 +183,16 @@
       <div class="reveal">
         <h4>Our Collections</h4>
         <ul class="footer-links">
-          <li><a href="categories/teak-bed.html">Teak Bed / Palang</a></li>
-<li><a href="categories/teak-showcase.html">Teak Showcase</a></li>
-<li><a href="categories/teak-dressings.html">Teak Dressings</a></li>
-<li><a href="categories/teak-sofa.html">Teak Sofa</a></li>
-<li><a href="categories/cushion-sofa.html">Cushion Sofa</a></li>
-<li><a href="categories/luxury-sofa.html">Luxury Sofa</a></li>
-<li><a href="categories/luxury-beds.html">Luxury Beds</a></li>
-<li><a href="categories/complete-furniture-set.html">Complete Furniture Set</a></li>
+          <li><a href="categories/antique.html">Antique</a></li>
+<li><a href="categories/bed.html">Bed</a></li>
+<li><a href="categories/chairs.html">Chairs</a></li>
+<li><a href="categories/dining.html">Dining</a></li>
+<li><a href="categories/door.html">Door</a></li>
+<li><a href="categories/dressing.html">Dressing</a></li>
 <li><a href="categories/jhula.html">Jhula</a></li>
-<li><a href="categories/antique-items.html">Antique Items</a></li>
+<li><a href="categories/marriage-set.html">Marriage Set</a></li>
+<li><a href="categories/showcase.html">Showcase</a></li>
+<li><a href="categories/sofa.html">Sofa</a></li>
         </ul>
       </div>
       <div class="reveal">
@@ -238,8 +224,10 @@
 <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 
 <script src="assets/js/config.js"></script>
+<script src="assets/js/collections.js"></script>
+<script src="assets/js/image-loader.js"></script>
 <script src="assets/js/main.js"></script>
-<script src="assets/js/lightbox.js"></script>
+<script src="assets/js/gallery.js"></script>
 
 </body>
 </html>

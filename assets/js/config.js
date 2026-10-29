@@ -26,7 +26,8 @@ const ARK_CONFIG = {
 };
 
 // Builds a wa.me link with the configured number + prefilled message.
-function arkWhatsappUrl() {
-  const msg = encodeURIComponent(ARK_CONFIG.whatsappMessage);
+// Pass a custom message to enquire about one specific photo.
+function arkWhatsappUrl(customMessage) {
+  const msg = encodeURIComponent(customMessage || ARK_CONFIG.whatsappMessage);
   return `https://wa.me/${ARK_CONFIG.whatsappNumber}?text=${msg}`;
 }

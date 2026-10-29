@@ -102,28 +102,74 @@ function initScrollToTop() {
 }
 
 /* 6) Hero Slider — cinematic fade + Ken Burns zoom, autoplay, arrows, dots,
-      pause on hover, swipe on mobile. Images live in
-      assets/images/hero-slider/ — just add/replace files there. */
+      pause on hover, swipe on mobile.
+      Slides are built from the files  hero-1, hero-2 ...  in
+      assets/images/hero-slider/  (any image format; missing numbers are
+      skipped). A photo whose shape does not suit the screen is shown whole
+      over a soft blurred copy of itself instead of being cropped. */
 function initHeroSlider() {
   const slider = document.querySelector(".hero-slider");
   if (!slider) return;
 
-  const slides = Array.from(slider.querySelectorAll(".hero-slide"));
+  const root = document.body.dataset.root || "";
   const dotsWrap = slider.querySelector(".hero-dots");
   const prevBtn = slider.querySelector(".hero-arrow.prev");
   const nextBtn = slider.querySelector(".hero-arrow.next");
+  const caption = slider.querySelector(".hero-caption");
+  const slides = [];
+  const dots = [];
   let current = 0;
   let timer = null;
   const AUTOPLAY_MS = 5500;
 
-  slides.forEach((_, i) => {
+  function updateControls() {
+    const many = slides.length > 1;
+    [prevBtn, nextBtn, dotsWrap].forEach(el => (el.style.display = many ? "" : "none"));
+  }
+  updateControls();
+
+  /* Wide photos fill the screen; very different shapes are shown whole. */
+  function fitSlide(slide, photo) {
+    const stageRatio = slider.clientWidth / slider.clientHeight;
+    const photoRatio = photo.w / photo.h;
+    const mismatch = Math.max(stageRatio / photoRatio, photoRatio / stageRatio);
+    slide.classList.toggle("is-contain", mismatch > 1.3);
+  }
+
+  function addSlide(photo) {
+    const slide = document.createElement("div");
+    slide.className = "hero-slide";
+
+    const bg = document.createElement("div");
+    bg.className = "hero-bg";
+    bg.style.backgroundImage = `url("${photo.url}")`;
+
+    const img = photo.img;
+    img.alt = `ARK Furniture showroom slide ${slides.length + 1}`;
+    img.draggable = false;
+
+    slide.append(bg, img);
+    slider.insertBefore(slide, caption);
+    slide._photo = photo;
+    fitSlide(slide, photo);
+
+    const index = slides.length;
+    slides.push(slide);
+
     const dot = document.createElement("button");
-    dot.setAttribute("aria-label", `Go to slide ${i + 1}`);
-    if (i === 0) dot.classList.add("is-active");
-    dot.addEventListener("click", () => goTo(i));
+    dot.setAttribute("aria-label", `Go to slide ${index + 1}`);
+    dot.addEventListener("click", () => { goTo(index); stop(); play(); });
     dotsWrap.appendChild(dot);
-  });
-  const dots = Array.from(dotsWrap.children);
+    dots.push(dot);
+
+    if (index === 0) {
+      slide.classList.add("is-active");
+      dot.classList.add("is-active");
+      restartKenBurns(slide);
+    }
+    updateControls();
+    if (slides.length === 2) play();
+  }
 
   function restartKenBurns(slide) {
     const img = slide.querySelector("img");
@@ -135,6 +181,7 @@ function initHeroSlider() {
   }
 
   function goTo(index) {
+    if (slides.length < 2) return;
     slides[current].classList.remove("is-active");
     dots[current].classList.remove("is-active");
     current = (index + slides.length) % slides.length;
@@ -146,7 +193,7 @@ function initHeroSlider() {
   function next() { goTo(current + 1); }
   function prev() { goTo(current - 1); }
 
-  function play() { timer = setInterval(next, AUTOPLAY_MS); }
+  function play() { stop(); if (slides.length > 1) timer = setInterval(next, AUTOPLAY_MS); }
   function stop() { clearInterval(timer); }
 
   prevBtn.addEventListener("click", () => { prev(); stop(); play(); });
@@ -154,6 +201,8 @@ function initHeroSlider() {
 
   slider.addEventListener("mouseenter", stop);
   slider.addEventListener("mouseleave", play);
+
+  window.addEventListener("resize", () => slides.forEach(s => fitSlide(s, s._photo)));
 
   // Touch swipe support
   let touchStartX = 0;
@@ -163,22 +212,32 @@ function initHeroSlider() {
     if (Math.abs(dx) > 40) { dx > 0 ? prev() : next(); stop(); play(); }
   }, { passive: true });
 
-  restartKenBurns(slides[0]);
-  play();
+  // Find the photos: first slide immediately, the rest as they arrive (in order).
+  const base = n => `${root}${ARK_HERO.folder}/${ARK_HERO.prefix}${n}`;
+  (async () => {
+    const first = await arkFindPhoto(base(1), "hero", root);
+    const rest = [];
+    for (let n = 2; n <= ARK_HERO.slots; n++) rest.push(arkFindPhoto(base(n), "hero", root));
+    if (first) addSlide(first);
+    for (const pending of rest) {
+      const photo = await pending;
+      if (photo) addSlide(photo);
+    }
+  })();
 }
 
-/* 7) Ripple effect on .btn clicks */
+/* 7) Ripple effect on .btn clicks (delegated, so buttons added later work too) */
 function initButtonRipple() {
-  document.querySelectorAll(".btn").forEach(btn => {
-    btn.addEventListener("click", function (e) {
-      const rect = this.getBoundingClientRect();
-      const ripple = document.createElement("span");
-      ripple.className = "ripple";
-      ripple.style.left = `${e.clientX - rect.left}px`;
-      ripple.style.top = `${e.clientY - rect.top}px`;
-      this.appendChild(ripple);
-      setTimeout(() => ripple.remove(), 650);
-    });
+  document.addEventListener("click", e => {
+    const btn = e.target.closest(".btn");
+    if (!btn) return;
+    const rect = btn.getBoundingClientRect();
+    const ripple = document.createElement("span");
+    ripple.className = "ripple";
+    ripple.style.left = `${e.clientX - rect.left}px`;
+    ripple.style.top = `${e.clientY - rect.top}px`;
+    btn.appendChild(ripple);
+    setTimeout(() => ripple.remove(), 650);
   });
 }
 
