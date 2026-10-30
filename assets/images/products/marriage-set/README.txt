@@ -1,9 +1,9 @@
 Put the Marriage Set photos in this folder.
 
 Name them like this (the number is the order they appear in):
-    marriage set 1.jpg
-    marriage set 2.jpg
-    marriage set 3.jpg   ... and so on
+    marriage 1.jpg
+    marriage 2.jpg
+    marriage 3.jpg   ... and so on
 
 - Any photo format works: jpg, jpeg, png, webp, avif, gif, bmp, heic ...
 - Use lowercase names with a space before the number.

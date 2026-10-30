@@ -627,6 +627,15 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
   transform: translateX(4px);
 }
 
+/* An odd number of collections: centre the last tile on its own row */
+@media (min-width: 721px) {
+  .collection-grid .collection-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(50% - var(--space-md) / 2);
+  }
+}
+
 /* ---------- 8. BREADCRUMBS ---------- */
 .breadcrumb {
   padding: var(--space-sm) 0;

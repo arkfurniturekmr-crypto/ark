@@ -1,9 +1,9 @@
 Put the Chairs photos in this folder.
 
 Name them like this (the number is the order they appear in):
-    chairs 1.jpg
-    chairs 2.jpg
-    chairs 3.jpg   ... and so on
+    chair 1.jpg
+    chair 2.jpg
+    chair 3.jpg   ... and so on
 
 - Any photo format works: jpg, jpeg, png, webp, avif, gif, bmp, heic ...
 - Use lowercase names with a space before the number.

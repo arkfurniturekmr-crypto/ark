@@ -11,7 +11,7 @@ ark-furniture/
 ├── about.html               About Us
 ├── contact.html              Contact Us
 ├── locate-us.html            Locate Us (Google Map)
-├── categories/                One page per collection (10 files)
+├── categories/                One page per collection (11 files)
 │    ├── teak-bed.html
 │    ├── teak-showcase.html
 │    ├── teak-dressings.html
