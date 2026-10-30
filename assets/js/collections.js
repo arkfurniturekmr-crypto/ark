@@ -23,7 +23,7 @@ const ARK_COLLECTIONS = [
   { slug: "door", name: "Door", prefix: "door", photos: 17, spare: 4 },
   { slug: "dressing", name: "Dressing", prefix: "dressing", photos: 27, spare: 4 },
   { slug: "jhula", name: "Jhula", prefix: "jhula", photos: 3, spare: 4 },
-  { slug: "marriage-set", name: "Marriage Set", prefix: "marriage", photos: 32, spare: 4 },
+  { slug: "marriage-set", name: "Marriage Set", prefix: "marriage set", photos: 32, spare: 4 },
   { slug: "showcase", name: "Showcase", prefix: "showcase", photos: 9, spare: 4 },
   { slug: "sofa", name: "Sofa", prefix: "sofa", photos: 25, spare: 4 },
   { slug: "cushion-sofa", name: "Cushion Sofa", prefix: "cushion", photos: 11, spare: 4 },
